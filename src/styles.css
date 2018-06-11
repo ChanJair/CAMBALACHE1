@@ -72,14 +72,6 @@ nav ul{      /*el contenedor de las opciones del menu*/
     z-index: 40;
   }
   
-  
-  
-      /*mobile*/
-  
-          
-      
-  
-  
 /*******NAVBAR*******/
 
 /*******CARRUSEL*******/
@@ -219,10 +211,8 @@ nav ul{      /*el contenedor de las opciones del menu*/
     padding: 0 100px 0 100px;
 }
 .nivel{
-    z-index: 15;
-    
+    z-index: 15;   
 }
-
 .margen{
     margin: 10px;
     height: 90%;
@@ -257,8 +247,7 @@ nav ul{      /*el contenedor de las opciones del menu*/
     background-size: cover;
     z-index: 15;
 }
-
-/*******EFECTO GALERIA*******/
+/*******efecto galeria*******/
 .view {
     width: 100%;
     height: 100%;
@@ -340,7 +329,6 @@ nav ul{      /*el contenedor de las opciones del menu*/
     opacity: 0;
 	transition: all 0.2s ease-in-out;
 }
-
 .view-first:hover img { 
 	transform: scale(1.1);
 } 
@@ -359,12 +347,11 @@ nav ul{      /*el contenedor de las opciones del menu*/
 .view-first:hover a.info {
     transition-delay: 0.2s;
 }
-/*******EFECTO GALERIA*******/
+/*******efecto galeria*******/
 
 /*******GALERIA*******/
 
 /*******CONTACTO*******/
-
 #contacto{
     background-image: url(assets/img/donador2-min.JPG);
     background-size: cover;
@@ -401,8 +388,6 @@ nav ul{      /*el contenedor de las opciones del menu*/
 .form-control-file{
     font-size: 1.1rem;
 }
-
-
 /*******CONTACTO*******/
 
 
@@ -491,6 +476,7 @@ nav ul{      /*el contenedor de las opciones del menu*/
 
 
 @media screen and (max-width: 768px){
+    /**********NAVBAR*************/
     nav ul{       /*el contenedor de las opciones del menu*/
       max-height: 0px;
       position: fixed;
@@ -523,9 +509,9 @@ nav ul{      /*el contenedor de las opciones del menu*/
       position: fixed;
       top: 4.5em;
     }
+    /**********NAVBAR*************/
     
-
-    
+    /**********SLIDER*************/    
     .titulo{
         padding: 30vh 15% 2% 15%;
         font-size: 2.5rem;
@@ -534,6 +520,9 @@ nav ul{      /*el contenedor de las opciones del menu*/
     .boton{
         font-size: .5rem;
     }
+    /**********SLIDER*************/    
+
+    /**********INDICADORES*************/    
     .intro{
         padding: 20vh 40px 0 40px;
         font-size: 1.3rem;
@@ -548,6 +537,9 @@ nav ul{      /*el contenedor de las opciones del menu*/
         display: block;
         font-size: .8rem;
     }
+    /**********INDICADORES*************/    
+
+    /**********BENEFICIARIOS*************/    
     .coment{
         padding: 17vh 40px 0 40px;
     }
@@ -566,6 +558,9 @@ nav ul{      /*el contenedor de las opciones del menu*/
         font-size: .8rem;
         line-height: 1rem;
     }
+    /**********BENEFICIARIOS*************/    
+
+    /**********GALERIA*************/    
     .lienzo{
         height: 17vh;
     }
@@ -589,6 +584,9 @@ nav ul{      /*el contenedor de las opciones del menu*/
         font-size: 15px;
         padding: 0 10px 0 10px;
     }
+    /**********GALERIA*************/ 
+    
+    /**********CONTACTO*************/    
     .descripcion{
         padding: 240px 40px 10px 40px;
         
