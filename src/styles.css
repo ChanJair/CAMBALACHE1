@@ -19,32 +19,67 @@
     z-index: 0;
 }
 /*******NAVBAR*******/
-.navbar{
-    position: fixed;
+nav ul{      /*el contenedor de las opciones del menu*/
     width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.651);*/ /*fondo del menu desplegado*/
+    overflow: hidden; /*este oculta las opciones en celular*/
     color: white;
-    z-index: 20;
-    height: 100px;
-}
-.logo img{
-    width: 70px;
-    height: 70px;
-}
-.navbar a{
-    padding-left: 15px;
-    color: rgb(196, 196, 196);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-}
-.cajaComando{
     padding: 0;
-}
-.cajaComando img{
-    height: 30px;
-}
-.comando{
-    cursor: pointer;
-}
+    text-align: right;
+    margin: 0;
+    transition: all 1s ease-in-out; /*este baja en cascada las opciones del menu*/
+    position: fixed;
+    z-index: 30;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8rem;
+  }
+  
+  nav ul li{   /*link's en individual*/
+    display: inline-block;  /*mantiene los links en horizontal*/
+    padding: 40px 20px;
+  }
+  
+  nav ul li a{   /*anclas en individual*/
+    text-decoration: none;  /*quita la apariencia normal de las anclas*/
+    color: inherit;  /*quita el color azul de las anclas*/
+  }
+  
+  
+  nav ul li:hover {  /*fondo de color cuando pones el puntero encima*/
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+       
+  .menu-bars{  /*contenedor de hamburguesa*/
+      width: 100%;   /*ocupa el ancho total de la fila*/
+      /*background-color: #005c48;*/
+      text-align: right;
+      box-shadow: border-box;
+      padding: 20px 0px;
+      cursor: pointer;   /*puntero manita sobre hamburguesa*/
+      color: #fff;
+      display: none;   /*desaparece hamburguesa en laptop*/
+  }
+      
+  .menu-bars .fas{    /*hamburguesa*/
+    margin-right: 20px;
+    font-size: 1.4rem;
+  }
+  
+  .navLogo img{
+    height: 70px;
+    position: fixed;
+    margin: 20px 0 0 40px;
+    z-index: 40;
+  }
+  
+  
+  
+      /*mobile*/
+  
+          
+      
+  
+  
 /*******NAVBAR*******/
 
 /*******CARRUSEL*******/
@@ -455,20 +490,42 @@
 
 
 
-@media (max-width: 992px){
+@media screen and (max-width: 768px){
+    nav ul{       /*el contenedor de las opciones del menu*/
+      max-height: 0px;
+      position: fixed;
+      top: 2em;
+      font-size: .7rem;
+    }
+            
+    nav ul li{
+      box-sizing: border-box;
+      width: 100%;    /*permite mantener vertical lista de links*/
+      padding: 10px;
+      text-align: right;
+    }
+            
+    .menu-bars{     /*contenedor de hamburguesa*/
+      display: block;
+      position: fixed;
+      top: 0;
+      z-index: 30;
+    }
+    .navLogo img{
+      height: 40px;
+      position: fixed;
+      margin: 20px 0 0 20px;
+      z-index: 40;
+    }
+            
+    .showing{
+      max-height: 20em;
+      position: fixed;
+      top: 4.5em;
+    }
+    
 
-    .logo img{
-        width: 40px;
-        height: 40px;
-    }
-    .navbar a{
-        font-size: .1rem;
-        padding: 0 0 0 3px;
-    }
-    .cajaComando img{
-        height: 18px;
-        margin: 0 8vh 0 0;
-    }
+    
     .titulo{
         padding: 30vh 15% 2% 15%;
         font-size: 2.5rem;
